@@ -3,3 +3,9 @@ numpy
 scikit-learn
 matplotlib
 seaborn
+
+# Data sourcing
+requests
+python-dotenv
+pyyaml
+pyarrow
