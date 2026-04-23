@@ -6,35 +6,45 @@ core:
   - ticker: NVDA
     name: NVIDIA
     role: design
+    gdelt_query: '("NVIDIA" OR "Nvidia Corp" OR "NVDA") (semiconductor OR chip OR GPU OR stock)'
   - ticker: AMD
     name: Advanced Micro Devices
     role: design
+    gdelt_query: '("Advanced Micro Devices" OR "AMD chip" OR "AMD stock") (semiconductor OR chip OR processor)'
   - ticker: INTC
     name: Intel
     role: idm
+    gdelt_query: '("Intel Corp" OR "Intel stock" OR "INTC") (semiconductor OR chip OR processor)'
   - ticker: TSM
     name: Taiwan Semiconductor Manufacturing
     role: foundry
+    gdelt_query: '("TSMC" OR "Taiwan Semiconductor") (chip OR foundry OR semiconductor)'
   - ticker: ASML
     name: ASML Holding
     role: equipment
+    gdelt_query: '("ASML") (lithography OR semiconductor OR chip)'
 
 extended:
   - ticker: QCOM
     name: Qualcomm
     role: design
+    gdelt_query: '("Qualcomm" OR "QCOM") (chip OR semiconductor OR modem)'
   - ticker: AVGO
     name: Broadcom
     role: design
+    gdelt_query: '("Broadcom" OR "AVGO") (chip OR semiconductor)'
   - ticker: MU
     name: Micron Technology
     role: memory
+    gdelt_query: '("Micron Technology" OR "Micron stock") (memory OR DRAM OR chip OR semiconductor)'
   - ticker: TXN
     name: Texas Instruments
     role: idm
+    gdelt_query: '("Texas Instruments" OR "TXN stock") (chip OR semiconductor OR analog)'
   - ticker: AMAT
     name: Applied Materials
     role: equipment
+    gdelt_query: '("Applied Materials" OR "AMAT") (semiconductor OR equipment OR wafer)'
 
 # Alpha Vantage News Sentiment covers ~2022-04 -> present.
 # For regression/classification we constrain training to this window when sentiment is a feature.
